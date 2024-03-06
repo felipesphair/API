@@ -1,27 +1,37 @@
-# Slim Framework 3 Skeleton Application
+# API RESTful com Slim Framework
+Esta é uma API RESTful implementada em PHP usando o Slim Framework. O objetivo deste projeto é fornecer uma estrutura sólida, seguindo boas práticas de arquitetura e ORM usando Illuminate do Laravel para interagir com o banco de dados de forma automática.
 
-Use this skeleton application to quickly setup and start working on a new Slim Framework 3 application. This application uses the latest Slim 3 with the PHP-View template renderer. It also uses the Monolog logger.
+Além disso, o projeto inclui configurações para lidar com CORS, permitindo que outros sites façam requisições à API, bem como a implementação de token de autenticação para garantir que apenas usuários autorizados possam utilizar as funções da API. O JWT é usado para gerar e autenticar tokens de usuário.
 
-This skeleton application was built for Composer. This makes setting up a new Slim Framework application quick and easy.
+# Configurações Necessárias
+- Execute o cadastro manual de um usuário na tabela de usuários:
 
-## Install the Application
+- Abra o terminal na pasta do projeto e execute o comando composer install para garantir que todas as dependências sejam instaladas com as versões corretas:
 
-Run this command from the directory in which you want to install your new Slim Framework application.
+- Utilize o Postman para fazer requisições e receber respostas do projeto:
 
-    php composer.phar create-project slim/slim-skeleton [my-app-name]
+# Exemplos de Uso da API
+Login para obter o token:
 
-Replace `[my-app-name]` with the desired directory name for your new application. You'll want to:
+URL: http://localhost/slim-api/public/api/token
 
-* Point your virtual host document root to your new application's `public/` directory.
-* Ensure `logs/` is web writeable.
+Configuração do Header Authorization: (token gerado)
 
-To run the application in development, you can run these commands 
+Listar Produtos:
 
-	cd [my-app-name]
-	php composer.phar start
+URL: http://localhost/slim-api/public/api/V1/produtos/lista
 
-Run this command in the application directory to run the test suite
+URL com ID específico: http://localhost/slim-api/public/api/V1/produtos/lista/{id}
 
-	php composer.phar test
+Adicionar Produto:
 
-That's it! Now go build something cool.
+URL: http://localhost/slim-api/public/api/V1/produtos/adiciona
+
+Atualizar Produto:
+
+URL: http://localhost/slim-api/public/api/V1/produtos/atualiza/{id}
+
+Remover Produto:
+
+URL: http://localhost/slim-api/public/api/V1/produtos/remove/{id}
+
