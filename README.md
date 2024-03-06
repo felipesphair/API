@@ -37,6 +37,7 @@ Além disso, o projeto inclui configurações para lidar com CORS, permitindo qu
   
   <img width="959" alt="image" src="https://github.com/felipesphair/API/assets/107360437/a5b56005-c7a6-4d31-8a53-16f2becce124">
 
+- Caso deseje adicionar mais um usuario no banco de dados coloque a opção de senha md5 sempre!
 
 # Exemplos de Uso da API
 
