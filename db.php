@@ -42,7 +42,12 @@ $schema->create($tabelaUsuario, function($table){
 });
 
 
-
+$db->table($tabelaUsuario)->insert([
+    'id'=> 1,
+    'nome'=>"Administrador",
+    'email'=>"admin@gmail.com",
+    'senha'=>"123456"
+]);
 
 
 $db->table($tabela)->insert([
