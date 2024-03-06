@@ -42,12 +42,15 @@ $schema->create($tabelaUsuario, function($table){
 });
 
 
+$senhaCriptografada = md5("123456");
+
 $db->table($tabelaUsuario)->insert([
-    'id'=> 1,
-    'nome'=>"Administrador",
-    'email'=>"admin@gmail.com",
-    'senha'=>"123456"
+    'id' => 1,
+    'nome' => "Administrador",
+    'email' => "admin@gmail.com",
+    'senha' => $senhaCriptografada
 ]);
+
 
 
 $db->table($tabela)->insert([
