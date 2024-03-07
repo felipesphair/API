@@ -14,7 +14,7 @@ O projeto é um gerenciador de produtos onde você irá conseguir listar, adicio
 
 - Coloque a pasta que baixou no HTDOCS nos arquivos onde o Xampp foi instalado:
 
- <img width="960" alt="image" src="https://github.com/felipesphair/API/assets/107360437/b4cd7c12-55a3-401c-b402-0e406d4588be">
+  <img width="960" alt="image" src="https://github.com/felipesphair/API/assets/107360437/b4cd7c12-55a3-401c-b402-0e406d4588be">
 
 - Inicie o Apache e MYSQL:
 
