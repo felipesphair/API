@@ -4,6 +4,8 @@ Esta é uma API RESTful implementada em PHP usando o Slim Framework. O objetivo 
 
 Além disso, o projeto inclui configurações para lidar com CORS, permitindo que outros sites façam requisições à API, bem como a implementação de token de autenticação para garantir que apenas usuários autorizados possam utilizar as funções da API. O JWT é usado para gerar e autenticar tokens de usuário.
 
+O projeto é um gerenciador de produtos onde você irá conseguir listar, adicionar, atualizar e remover sendo basicamente um CRUD.
+
 # Configurações Necessárias
 
 - Tenha o Xampp instalado:
@@ -43,25 +45,44 @@ Além disso, o projeto inclui configurações para lidar com CORS, permitindo qu
 
 - Login para obter o token:
 
-      URL: http://localhost/slim-api/public/api/token
+  URL: http://localhost/slim-api/public/api/token
+  
+  <img width="960" alt="image" src="https://github.com/felipesphair/API/assets/107360437/4cc30d90-89fb-4712-9ac9-0d36f1f4718f">
 
-- Configuração do Header Authorization: (token gerado)
+- Configuração do Header Authorization: (token gerado):
+
+  <img width="960" alt="image" src="https://github.com/felipesphair/API/assets/107360437/1fbacee6-90c3-4d3d-8018-14bac6638ef8">
 
 - Listar Produtos:
 
-      URL: http://localhost/slim-api/public/api/V1/produtos/lista
+  URL: http://localhost/slim-api/public/api/v1/produtos/lista
 
-      URL com ID específico: http://localhost/slim-api/public/api/V1/produtos/lista/{id}
+  <img width="960" alt="image" src="https://github.com/felipesphair/API/assets/107360437/516a4e06-1dbf-42a4-8cf8-dbd60893365e">
+
+
+  URL com ID específico: http://localhost/slim-api/public/api/v1/produtos/lista/{id}
+
+  <img width="960" alt="image" src="https://github.com/felipesphair/API/assets/107360437/0e352907-03a5-4847-9094-1ffe13ea2a08">
+
 
 - Adicionar Produto:
 
-      URL: http://localhost/slim-api/public/api/V1/produtos/adiciona
+  URL: http://localhost/slim-api/public/api/v1/produtos/adiciona
 
+  <img width="960" alt="image" src="https://github.com/felipesphair/API/assets/107360437/667af894-b83a-46e8-904c-d665d9975c1f">
+
+  
 - Atualizar Produto:
 
-      URL: http://localhost/slim-api/public/api/V1/produtos/atualiza/{id}
+  URL: http://localhost/slim-api/public/api/v1/produtos/atualiza/{id}
+
+  <img width="960" alt="image" src="https://github.com/felipesphair/API/assets/107360437/bfa603ed-b702-40c4-a591-8c07dd801ea4">
+
 
 - Remover Produto:
 
-      URL: http://localhost/slim-api/public/api/V1/produtos/remove/{id}
+  URL: http://localhost/slim-api/public/api/v1/produtos/remove/{id}
+
+  <img width="960" alt="image" src="https://github.com/felipesphair/API/assets/107360437/7b030257-326b-4ad5-80ed-d5c2a72e79ee">
+
 
